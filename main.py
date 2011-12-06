@@ -2,7 +2,7 @@ import imaplib, getpass
 def fetchMyMail():
 	try:
 		M = imaplib.IMAP4_SSL('imap.gmail.com',993)
-		M.login('indiandexter002@gmail.com','shakespeare')
+		M.login('','')
 		M.select()
 		data = M.search(None, 'ALL')
 		info = M.fetch(495, '(RFC822)')
